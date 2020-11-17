@@ -9,7 +9,8 @@ import jakarta.ws.rs.core.MediaType;
  * Root resource (exposed at "myresource" path)
  */
 @Path("myresource")
-public class MyResource {
+public class MyResource 
+{
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -19,7 +20,8 @@ public class MyResource {
      */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt() {
+    public String getIt() 
+    {
         return "Got it!";
     }
 }
